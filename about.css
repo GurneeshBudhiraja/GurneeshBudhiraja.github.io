@@ -50,7 +50,6 @@ nav a:hover{
 }
 #main{
   margin-top: 2rem;
-  /* background-color: #47ff40; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,4 +105,28 @@ nav a:hover{
     filter: blur(100px);
   }
   
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    padding: 2rem 1.75rem;
+  }
+  #nav-two{
+    gap: 1rem;
+ }
+ .logo{
+  font-size: 2rem;
+ }
+ 
+  #content{
+    width: 100%;
+  }
+  
+  #image{
+    display:none;
+  }
+  
+  #animation-div{
+    display: none;
+  }
 }
