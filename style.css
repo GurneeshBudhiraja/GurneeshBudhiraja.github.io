@@ -17,6 +17,7 @@ html,body{
 #container{
   height: 100vh;
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   
@@ -53,7 +54,8 @@ nav>a:hover{
   align-items: center;
 }
 #main-one{
-  max-width: 28vw;
+  width: 28vw;
+  z-index: 1;
 }
 #main-one span{
   text-shadow: -0.2rem -0.2rem 2rem #47ff40;
@@ -65,7 +67,7 @@ nav>a:hover{
 #main-two>img {
   height: fit-content;
   width: 30vw;
-  filter: drop-shadow(-0.2rem -0.2rem 0.1rem #8fff2c);
+  animation: glow 1s ease-in-out 0s infinite alternate;
 }
 .name{
   word-wrap: normal;
@@ -114,7 +116,6 @@ hr{
   gap: 0.5rem; 
 }
 .skills-image img{
-  cursor: pointer;
   height: 10rem;
   object-fit: cov er;
   width: 100%;  
@@ -243,7 +244,7 @@ footer{
 #circle-one{
   position: absolute;
   height: 100%;
-  filter: blur(50px);
+  animation: footer 2s ease-in-out 0s infinite alternate;
   width: 30%;
   z-index: -2;
   border-radius: 50% 50% 0 0 ;
@@ -271,3 +272,28 @@ footer{
   font-size: 1.25rem;
   font-weight: 500;
 }
+@keyframes glow {
+  from{
+    filter:none;
+  }
+  to{
+    filter: drop-shadow(-0.2rem -0.2rem 0.5rem #77ff00);
+  }
+}
+@keyframes footer {
+  0%{
+    filter: blur(30px);
+  }
+  25%{
+    filter: blur(50px);
+  }
+  50%{
+    filter: blur(70px);
+  }
+  75%{filter: blur(85px);}
+  100%{
+    filter: blur(100px);
+  }
+  
+}
+
