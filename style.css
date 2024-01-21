@@ -179,17 +179,17 @@ hr{
   position: relative;
 }
 #basement, #tictactoe, #rockpaper{
-  background-image: url("basement.jpg");
+  background-image: url("images/basement.jpg");
   background-position: right;
   background-size: cover;
   text-align: left;
 }
 #tictactoe{
-  background-image: url("tic.jpg");
+  background-image: url("images/tic.jpg");
   background-position: left;
 }
 #rockpaper{
-  background-image: url("rock.jpg");
+  background-image: url("images/rock.jpg");
   background-position: left;
   color: white;
 }
